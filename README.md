@@ -1,8 +1,8 @@
-# Pironman-5-Setup
+## Pironman-5-Setup
 
 ### Pironman 5
 
-Pironman 5 case
+### Pironman 5 case
 
 ## Quick Links:
 
@@ -14,15 +14,13 @@ Pironman 5 case
         Update
         Compatible Systems
             Ubuntu 24.04 server eth0 and wifi not work
-            Debug
-        About SunFounder
-        Contact us
+         
+  
 
 About Pironman5
 Links
 
-    SunFounder Online Store   https://www.sunfounder.com/
-    Documentation   https://docs.sunfounder.com/en/latest/
+
 
 Installation
 
@@ -90,11 +88,11 @@ sudo pironman5 start
 
 sudo /opt/pironman5/venv/bin/python3
 
-About SunFounder
+About 
 
-SunFounder is a company focused on STEAM education with products like open source robots, development boards, STEAM kit, modules, tools and other smart devices distributed globally. In SunFounder, we strive to help elementary and middle school students as well as hobbyists, through STEAM education, strengthen their hands-on practices and problem-solving abilities. In this way, we hope to disseminate knowledge and provide skill training in a full-of-joy way, thus fostering your interest in programming and making, and exposing you to a fascinating world of science and engineering. To embrace the future of artificial intelligence, it is urgent and meaningful to learn abundant STEAM knowledge.
+
 Contact us
 
-website: www.sunfounder.com
+website:
 
-E-mail: service@sunfounder.com
+E-mail: 
