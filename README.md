@@ -14,14 +14,13 @@ Quick Links:
   - [Compatible Systems](#compatible-systems)
     - [Ubuntu 24.04 server eth0 and wifi not work](#ubuntu-2404-server-eth0-and-wifi-not-work)
     - [Debug](#debug)
-  - [About SunFounder](#about-sunfounder)
-  - [Contact us](#contact-us)
+
 
 ## About Pironman5
 
 ## Links
 
-- SunFounder Online Store &emsp; <https://www.sunfounder.com/>
+
 - Documentation &emsp; <https://docs.sunfounder.com/en/latest/>
 
 ## Installation
