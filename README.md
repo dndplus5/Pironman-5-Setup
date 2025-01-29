@@ -14,6 +14,7 @@ Quick Links:
   - [Compatible Systems](#compatible-systems)
     - [Ubuntu 24.04 server eth0 and wifi not work](#ubuntu-2404-server-eth0-and-wifi-not-work)
     - [Debug](#debug)
+  - [Fans and Lighting](#how-to)
 
 
 ## About Pironman5
@@ -25,7 +26,7 @@ Quick Links:
 
 ## Installation
 
-For systems that don't have git, python3 pre-installed you need to install them first
+For systems that don't have git python3 pre-installed you need to install them first
 
 ```bash
 sudo apt-get update
@@ -105,4 +106,40 @@ sudo systemctl restart pironman5.service
 sudo pironman5 start
 
 sudo /opt/pironman5/venv/bin/python3
+```
+
+Fans and Lighting
+
+```
+usage: pironman5-service [-h] [-c] [-rc [RGB_COLOR]] [-rb [RGB_BRIGHTNESS]]
+                        [-rs [{solid,breathing,flow,flow_reverse,rainbow,rainbow_reverse,hue_cycle}]] [-rp [RGB_SPEED]]
+                        [-re [RGB_ENABLE]] [-rl [RGB_LED_COUNT]] [-u [{C,F}]] [-gm [GPIO_FAN_MODE]] [-gp [GPIO_FAN_PIN]]
+                        [{start,stop}]
+
+Pironman5
+
+positional arguments:
+  {start,stop}          Command
+
+options:
+  -h, --help            show this help message and exit
+  -c, --config          Show config
+  -rc [RGB_COLOR], --rgb-color [RGB_COLOR]
+                        RGB color in hex format with or without # (e.g. #FF0000 or 00aabb)
+  -rb [RGB_BRIGHTNESS], --rgb-brightness [RGB_BRIGHTNESS]
+                        RGB brightness 0-100
+  -rs [{solid,breathing,flow,flow_reverse,rainbow,rainbow_reverse,hue_cycle}], --rgb-style [{solid,breathing,flow,flow_reverse,rainbow,rainbow_reverse,hue_cycle}]
+                        RGB style
+  -rp [RGB_SPEED], --rgb-speed [RGB_SPEED]
+                        RGB speed 0-100
+  -re [RGB_ENABLE], --rgb-enable [RGB_ENABLE]
+                        RGB enable True/False
+  -rl [RGB_LED_COUNT], --rgb-led-count [RGB_LED_COUNT]
+                        RGB LED count int
+  -u [{C,F}], --temperature-unit [{C,F}]
+                        Temperature unit
+  -gm [GPIO_FAN_MODE], --gpio-fan-mode [GPIO_FAN_MODE]
+                        GPIO fan mode, 0: Always On, 1: Performance, 2: Cool, 3: Balanced, 4: Quiet
+  -gp [GPIO_FAN_PIN], --gpio-fan-pin [GPIO_FAN_PIN]
+                        GPIO fan pin
 ```
