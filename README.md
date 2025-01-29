@@ -142,4 +142,5 @@ options:
                         GPIO fan mode, 0: Always On, 1: Performance, 2: Cool, 3: Balanced, 4: Quiet
   -gp [GPIO_FAN_PIN], --gpio-fan-pin [GPIO_FAN_PIN]
                         GPIO fan pin
+sudo systemctl restart pironman5.service (run this command for all changes to take effect)
 ```
