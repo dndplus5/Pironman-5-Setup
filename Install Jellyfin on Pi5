@@ -1,5 +1,23 @@
 - Setup
 - Update && Upgrade
+       sudo apt update && sudo apt upgrade -y
+- Install transport
+      sudo apt install apt-transport-https lsb-release
+      sudo apt install apt-transport-https ca-certificates gnupg2 curl git
+- Install GPG
+      curl https://repo.jellyfin.org/debian/jellyfin_team.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/jellyfin-archive-keyring.gpg >/dev/null
+      (alternate)curl -fsSL https://repo.jellyfin.org/ubuntu/jellyfin_team.gpg.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/jellyfin.gpg
+- Add Jellyfin Repository
+      echo "deb [signed-by=/usr/share/keyrings/jellyfin-archive-keyring.gpg arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/debian $( lsb_release -c -s ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
+      (alternate)echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
+- Update Pi Package List
+      sudo apt update
+- If security Error occurs
+      echo deb https://security.debian.org/debian-security bookworm-security main non-free-firmware
+      echo deb-src https://security.debian.org/debian-security bookworm-security main non-free-firmware
 - Install Jellyfin
+      sudo apt install jellyfin
+- Find your IP address
+      hostname -I 
 - Add Libraries
 - Share
