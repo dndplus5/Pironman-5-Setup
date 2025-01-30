@@ -116,7 +116,9 @@ usage: pironman5-service [-h] [-c] [-rc [RGB_COLOR]] [-rb [RGB_BRIGHTNESS]]
                         [-re [RGB_ENABLE]] [-rl [RGB_LED_COUNT]] [-u [{C,F}]] [-gm [GPIO_FAN_MODE]] [-gp [GPIO_FAN_PIN]]
                         [{start,stop}]
 
-Pironman5
+sudo Pironman5 (options list) (number)
+example to turn fans on
+sudo pironman5 -gm 0 
 
 positional arguments:
   {start,stop}          Command
