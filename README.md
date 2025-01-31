@@ -52,6 +52,7 @@ Turn Fans and Lighting on
 sudo pironman5 -gm 0
 sudo pironman5 -rc #000ff
 sudo pironman5 -rs solid
+sudo systemctl restart pironman5.service
 ```
 Review the fan and lighting settings at the bottom of the page for alternative settings
 
