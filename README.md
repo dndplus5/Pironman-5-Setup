@@ -26,10 +26,10 @@ Quick Links:
 
 ## Installation
 
-For systems that don't have git python3 pre-installed you need to install them first
+For systems that do not have git python3 pre-installed need to install them first
 
 ```bash
-sudo apt-get update
+sudo apt-get update && sudo apt upgrade -y
 sudo apt-get install git python3 -y
 ```
 
@@ -42,7 +42,18 @@ cd ~/pironman5
 sudo python3 install.py
 ```
 
+OLED will tun on Fans and Lighting will turn off after reboot
+
 ## Usage
+
+Turn Fans and Lighting on
+
+```bash
+sudo pironman5 -gm 0
+sudo pironman5 -rc #000ff
+sudo pironman5 -rs solid
+```
+Review the fan and lighting settings at the bottom of the page for alternative settings
 
 -
 
